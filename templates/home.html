@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Home Screen</title>
+    </head>
+    <body>
+        
+        {{if .Email}}
+        <h1>Welcome {{.Firstname}}! </h1><br>
+        <a href="/logout">Log out</a>
+        {{else}}
+        <h1>Welcome! </h1><br>
+        <a href="/signup">Sign up</a> <br>
+        <a href="/login">Log in</a> <br>
+        {{end}}
+    </body>
+</html>
